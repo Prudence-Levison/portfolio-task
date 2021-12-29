@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale =1, maximum-scale =1,user-scalable=0"
+    />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white">
+    <header class="sticky top-0 z-100 h-32 bg-white md:justify-between">
+      <div class="sm:px-4">
+        <div class="flex justify-between md:space-x-20 md:pt-10 sm:p-9">
+          <div>
+            <!-- Website Logo -->
+            <a href="#" class="flex py-4 px-2">
+              <span class="font-bold text-orange-600 text-lg">P&L</span>
+            </a>
+          </div>
+          <div class="md:flex md:space-x-20">
+            <!-- Primary Navbar items -->
+            <div class="hidden md:flex items-end space-x-1">
+              <a
+                href="#features"
+                class="
+                  py-4
+                  px-8
+                  text-orange-600
+                  border-b-4 border-orange-600
+                  font-semibold
+                  hover:text-black
+                  transition
+                  duration-300
+                "
+                >About</a
+              >
+              <a
+                href="#works"
+                class="
+                  py-4
+                  px-10
+                  text-black
+                  font-semibold
+                  hover:text-orange-600
+                  transition
+                  duration-300
+                "
+                >Work</a
+              >
+              <a
+                href="#pricing"
+                class="
+                  py-4
+                  px-10
+                  text-black
+                  font-semibold
+                  hover:text-orange-600
+                  transition
+                  duration-300
+                "
+                >Contact</a
+              >
+            </div>
+          </div>
+          <!-- Secondary Navbar items -->
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center p-3">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-orange-600"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu p-3 bg-orange-600 absolute w-full">
+        <ul class="">
+          <li class="active">
+            <a
+              href="#features"
+              class="
+                block
+                text-sm
+                px-2
+                py-4
+                text-white
+                bg-orange-600
+                hover:transition
+                duration-300
+                font-semibold
+              "
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#works"
+              class="
+                block
+                text-white text-sm
+                px-2
+                py-4
+                bg-orange-600
+                hover:transition
+                duration-300
+              "
+            >
+              Work</a
+            >
+          </li>
+          <li>
+            <a
+              href="#pricing"
+              class="
+                block
+                text-white text-sm
+                px-2
+                py-4
+                bg-orange-600
+                hover:transition
+                duration-300
+              "
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="py-32 lg:py-52">
+      <div class="flex justify-center">
+        <h1
+          class="
+            max-w-xs
+            text-center text-4xl
+            flex
+            justify-center
+            leading-10
+            lg:max-w-full
+            font-bold
+            lg:text-5xl
+          "
+        >
+          Hey, I am Prudence Levison
+        </h1>
+      </div>
+      <p class="text-2xl pt-5 flex justify-center text-orange-600">
+        a web developer
+      </p>
+    </section>
+    <section class="pt-36">
+      <h3
+        class="
+          text-4xl
+          flex
+          justify-center
+          pb-4
+          font-bold
+          lg:text-5xl
+          underline
+          decoration-orange-600 decoration-solid
+          underline-offset-8
+        "
+      >
+        My Projects
+      </h3>
+      <div
+        class="
+          block
+          max-w-sm
+          md:max-w-full md:flex
+          lg:max-w-full
+          px-10
+          md:w-full
+          lg:px-0 lg:flex lg:justify-evenly
+          pt-28
+		  
+        "
+      >
+        <div>
+          <img src="img/apifetch.jpg " class="w-80" />
+          <a
+            href="https://foodbots.netlify.app/"
+            class="text-white flex justify-center py-6 bg-gray-900 md:"
+          >
+            Fetching an api</a
+          >
+        </div>
+        <div class="pt-20 md:pt-0 md:px-5 lg:pt-0">
+          <img src="img/landingpage.jpg  " class="w-80" />
+          <a
+            href="https://prudyslandingpage.netlify.app/"
+            class="text-white flex justify-center py-6 bg-gray-900"
+          >
+            A Landing Page</a
+          >
+        </div>
+        <div class="pt-20 md:pt-0 md:px-5 lg:pt-0">
+          <img src="img/calculator.jpg" class="w-96" />
+          <a
+            href="https://prudys-calculator-app.netlify.app/"
+            class="text-white flex justify-center py-6 bg-gray-900"
+          >
+            calculator App</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-56">
+      <div class="flex justify-center">
+        <h3
+          class="text-4xl flex justify-center text-center font-bold lg:text-5xl"
+        >
+          Let's work together...
+        </h3>
+      </div>
+      <p class="italic pt-11 flex justify-center text-xl">
+        How do you take your coffee?
+      </p>
+      <div class="block py-9 text-center lg:flex justify-center lg:py-14">
+        <p
+          class="
+            text-xl
+            px-4
+            leading-loose
+            hover:text-orange-600
+            transition
+            duration-300
+          "
+        >
+          <i class="fab fa-facebook-f px-2"></i>Facebook
+        </p>
+        <p
+          class="
+            text-xl
+            px-4
+            leading-loose
+            hover:text-orange-600
+            transition
+            duration-300
+          "
+        >
+          <i class="fab fa-github px-2"></i>Github
+        </p>
+        <p
+          class="
+            text-xl
+            px-4
+            leading-loose
+            hover:text-orange-600
+            transition
+            duration-300
+          "
+        >
+          <i class="fab fa-twitter px-2">Twitter</i>
+        </p>
+        <p
+          class="
+            text-xl
+            px-4
+            leading-loose
+            hover:text-orange-600
+            transition
+            duration-300
+          "
+        >
+          <i class="fas fa-envelope-square px-2"></i>Send An Email
+        </p>
+        <p
+          class="
+            text-xl
+            px-4
+            leading-loose
+            hover:text-orange-600
+            transition
+            duration-300
+          "
+        >
+          <i class="fas fa-phone-square-alt px-2"></i>Call Me
+        </p>
+      </div>
+    </section>
+    <section class="py-5">
+      <hr class="text-orange-600" />
+      <div
+        class="
+          block
+          px-7
+          lg:px-0 lg:flex
+          justify-evenly
+          text-center
+          leading-normal
+          lg:max-w-full lg:text-xl
+          pt-6
+        "
+      >
+        <p>This is a fake portfolio but all the projects are real.</p>
+        <p class="pt-4 lg:pt-0">@created by Prudence Levison</p>
+      </div>
+    </section>
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
